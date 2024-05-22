@@ -15,7 +15,7 @@ jobs:
       addons:
         sbom:                                          # new node
           on:
-            branch: 'main'                 # branch of the repository
+            branch: 'master'                 # branch of the repository
           run_phase: 'after_success'                   # when SBOM generation should be executed; see below
           output_format: 'cyclonedx-json'              # SBOM file(s) output format
           input_dir: '/sbom/ruby'                      # relative paths within build job environments, see below
